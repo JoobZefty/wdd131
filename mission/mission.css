@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #006EB6;
+    font-size:23px;
+
+}
+
+.title,
+main {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    /* Centers the content box */
+    padding: 20px;
+    border: solid black 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title {
+    letter-spacing: 2px;
+    /* Adjust the letter spacing as needed */
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 150px;
+    /* Resize the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
