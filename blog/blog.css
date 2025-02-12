@@ -1,0 +1,90 @@
+/* Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.) */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Lora', serif;
+    color:#473144;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #473144;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    color:#AF1B3F;
+    border-top: solid 2px #EFC69B;
+    border-bottom: solid 2px #EFC69B;
+}
+
+nav a{
+    padding:20px;
+}
+
+#b{
+    grid-area:1/2/1/3;
+}
+#c{
+    grid-area:1/3/1/4;
+}
+#d{
+    grid-area:1/4/1/5;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 6fr 2fr;
+}
+
+ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.filters{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: solid 2px #EFC69B;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.article{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: right;
+    margin-top:20px;
+
+}
+.right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-left: solid 2px #EFC69B;
+    margin-top:20px;
+}
+.left div{
+    padding:10px;
+}
+.title {
+    padding:10px;
+    color:#AF1B3F;
+    font-family:'Lora', serif;
+}
+.right img{
+    padding:10px;
+}
+.description{
+    padding:10px;
+}
