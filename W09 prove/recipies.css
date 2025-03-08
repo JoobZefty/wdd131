@@ -1,0 +1,201 @@
+
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.social img {
+    width: 80px;
+}
+header img{
+    width:200px;
+}
+header {
+    display: flex;
+    /* flex-direction defaults to row */
+    /* justify-content: space-around;  /* Adjusts spacing between items */
+    align-items: center; /* Aligns items vertically */
+    height: 300px; /* Optional styling */
+    background-color: #f0f0f0; /* Optional background */
+    font-size:80px;
+    font-family: 'Amatic SC', cursive;
+  }
+
+.hide {
+    display:none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+  #logo1 { 
+    width:30px;
+  }
+
+  .search {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    flex-direction: row; /* Aligns the input and button horizontally */
+    justify-content: flex-start; /* Aligns items to the start */
+    align-items: center; /* Vertically centers input and button */
+    gap: 10px; /* Adds space between the input and button */
+    padding: 10px; /* Adds padding to the search container */
+    background-color: #f0f0f0; /* Optional: Background color for the search bar */
+  }
+  
+  #search {
+    width: 80%; /* Makes the input field take up 80% of the container's width */
+    padding: 8px; /* Adds padding inside the input field */
+    border: 1px solid #ccc; /* Adds a border around the input */
+    border-radius: 4px; /* Rounds the corners of the input */
+    font-size: 16px; /* Sets the text size */
+  }
+  
+  #search-btn {
+    padding: 8px; /* Adds padding inside the button */
+    border: none; /* Removes default button border */
+    background: none; /* Removes default button background */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    display: flex; /* Aligns the image inside the button with flexbox */
+    align-items: center; /* Vertically centers the image */
+    justify-content: center; /* Horizontally centers the image */
+  }
+  
+  #search-btn img {
+    width: 20px; /* Adjusts the image width */
+    height: 20px; /* Adjusts the image height */
+    object-fit: contain; /* Ensures the image fits well inside the button */
+  }
+
+  .recipie1 {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: flex-start; /* Aligns items at the top */
+    align-items: center; /* Centers items horizontally */
+    gap: 10px; /* Adds spacing between the child elements */
+    padding: 15px; /* Optional: Adds padding inside the container */
+    background-color: #f9f9f9; /* Optional: Background color */
+    border: 1px solid #ccc; /* Optional: Adds a border for styling */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    width: 300px; /* Optional: Sets a fixed width */
+    margin: 0 auto; /* Centers the container on the page */
+    font-family: 'Amatic SC', cursive; /* Add the font family */
+  }
+  
+  .recipie1 h2 {
+    font-family: 'Amatic SC', cursive; /* Ensure title uses the same font */
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .recipie1 img {
+    width: 100%; /* Makes the image responsive to the container width */
+    border-radius: 8px; /* Adds rounded corners to the image */
+  }
+  
+
+  .recipie1 .rating {
+    font-size: 1.2rem; /* Adjusts the rating size */
+    margin-top: 5px; /* Adds spacing above the rating */
+  }
+  
+  .recipie1 .description {
+    font-size: 1rem; /* Adjusts the description font size */
+    color: #666; /* Sets a lighter text color for readability */
+    text-align: center; /* Centers the description text */
+  }
+
+  /* Global Styles */
+.recipie1 {
+    display: flex;
+    flex-direction: column; /* Default: Stack elements vertically for smaller screens */
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Restrict max width */
+    margin: 0 auto;
+  }
+
+  
+  .recipie1 img {
+    width: 100%; /* Full width for smaller screens */
+    border-radius: 8px;
+  }
+  
+  .recipie1 h2,
+  .recipie1 .description,
+  .recipie1 .rating {
+    text-align: center; /* Center-align text on smaller screens */
+  }
+  
+  /* Footer Default: Vertical layout for smaller screens */
+  footer {
+    display: flex;
+    flex-direction: column; /* Stack social and credit vertically */
+    gap: 10px;
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row; /* Ensure social icons are always horizontal */
+    gap: 10px;
+  }
+  
+  #credit {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  /* MEDIA QUERIES FOR RESPONSIVENESS */
+  /* Larger Screens (Tablet and Up) */
+  @media (min-width: 768px) {
+    /* Adjust .recipie1 */
+    .recipie1 {
+        flex-direction: row; /* Keep the image on the left and content on the right */
+        align-items: flex-start; /* Align content to the top */
+        max-width: 800px; /* Expand the container width for larger screens */
+        margin: 20px auto;
+    }
+    
+    .recipie1 img {
+        width: 50%; /* Image takes half the container */
+    }
+    
+    #notimg {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically on the right */
+        align-items: flex-start; /* Align elements to the left */
+        gap: 10px; /* Add space between the stacked elements */
+        width: 50%; /* Content on the right takes half the container */
+        padding: 10px;
+    }
+    /* Footer: Horizontal Layout */
+    footer {
+      flex-direction: row; /* Social icons and credit side-by-side */
+      justify-content: space-between; /* Spread elements across the footer */
+      align-items: center; /* Vertically align items */
+    }
+  
+    .social {
+      justify-content: flex-start; /* Keep icons to the left */
+    }
+  
+    #credit {
+      text-align: right; /* Move credit text to the right */
+    }
+  }
+  
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .recipie1 .description {
+      display: none; /* Hide the description on small screens */
+    }
+  }
