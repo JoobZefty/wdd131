@@ -303,6 +303,7 @@ const recipes = [
 
 function recipeTemplate(recipe){
     return `
+			<div class="recipe">
             <img src="${recipe.image}" alt="${recipe.name}">
             <div id="notimg">
             ${tagsTemplate(recipe.tags)}
@@ -312,6 +313,7 @@ function recipeTemplate(recipe){
             </span>
             <div class="description">${recipe.description}</div>
             </div>
+			</div>
     
     `;
 }
@@ -340,7 +342,7 @@ function getRandomRecipe(recipes){
 }
 
 function renderRecipes(recipeList){
-    let recipeContainer = document.querySelector('.recipe')
+	const recipeContainer = document.querySelector('#recipes');
     let html = recipeTemplate(recipeList);
     recipeContainer.innerHTML += html;
 
@@ -348,10 +350,49 @@ function renderRecipes(recipeList){
 
 function init(){
     const recipe = getRandomRecipe(recipes);
-    let recipeContainer = document.querySelector('.recipe')
+    const recipeContainer = document.querySelector('#recipes');
     recipeContainer.innerHTML = '';
     renderRecipes(recipe);
 }
     
 
 init();
+
+//search bar
+
+document.querySelector('#search-btn').addEventListener('click', searchHandler);
+
+function searchHandler(e) {
+    e.preventDefault(); // Prevent the page from reloading if needed
+
+    // Get the value typed in the search input and convert it to lowercase
+    const query = document.querySelector('#search').value.toLowerCase();
+
+    // Use the filter function to filter recipes
+    const filteredRecipes = filterRecipes(query);
+
+    // Render the filtered recipes to the page
+    renderFilteredRecipes(filteredRecipes);
+}
+
+function filterRecipes(query) {
+    return recipes
+        .filter(recipe =>
+            // Check if the query appears in name, description, tags, or ingredients
+            recipe.name.toLowerCase().includes(query) ||
+            recipe.description.toLowerCase().includes(query) ||
+            recipe.tags.find(tag => tag.toLowerCase().includes(query)) ||
+            recipe.recipeIngredient.find(ingredient => ingredient.toLowerCase().includes(query))
+        )
+        .sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically by name
+}
+
+function renderFilteredRecipes(filteredRecipes) {
+    const recipeContainer = document.querySelector('#recipes');
+    recipeContainer.innerHTML = ''; // Clear existing recipes
+
+    // Iterate through the filtered recipes and render them
+    filteredRecipes.forEach(recipe => {
+        recipeContainer.innerHTML += recipeTemplate(recipe);
+    });
+}
