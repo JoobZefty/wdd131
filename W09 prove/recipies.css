@@ -66,7 +66,7 @@ img {
     object-fit: contain; /* Ensures the image fits well inside the button */
   }
 
-  .recipie1 {
+  .recipe {
     display: flex; /* Enables flexbox */
     flex-direction: column; /* Stacks child elements vertically */
     justify-content: flex-start; /* Aligns items at the top */
@@ -81,32 +81,32 @@ img {
     font-family: 'Amatic SC', cursive; /* Add the font family */
   }
   
-  .recipie1 h2 {
+  .recipe h2 {
     font-family: 'Amatic SC', cursive; /* Ensure title uses the same font */
     font-size: 1.8rem;
     color: #333;
     text-align: center;
   }
   
-  .recipie1 img {
+  .recipe img {
     width: 100%; /* Makes the image responsive to the container width */
     border-radius: 8px; /* Adds rounded corners to the image */
   }
   
 
-  .recipie1 .rating {
+  .recipe .rating {
     font-size: 1.2rem; /* Adjusts the rating size */
     margin-top: 5px; /* Adds spacing above the rating */
   }
   
-  .recipie1 .description {
+  .recipe .description {
     font-size: 1rem; /* Adjusts the description font size */
     color: #666; /* Sets a lighter text color for readability */
     text-align: center; /* Centers the description text */
   }
 
   /* Global Styles */
-.recipie1 {
+.recipe {
     display: flex;
     flex-direction: column; /* Default: Stack elements vertically for smaller screens */
     align-items: center;
@@ -121,14 +121,14 @@ img {
   }
 
   
-  .recipie1 img {
+  .recipe img {
     width: 100%; /* Full width for smaller screens */
     border-radius: 8px;
   }
   
-  .recipie1 h2,
-  .recipie1 .description,
-  .recipie1 .rating {
+  .recipe h2,
+  .recipe .description,
+  .recipe .rating {
     text-align: center; /* Center-align text on smaller screens */
   }
   
@@ -156,15 +156,15 @@ img {
   /* MEDIA QUERIES FOR RESPONSIVENESS */
   /* Larger Screens (Tablet and Up) */
   @media (min-width: 768px) {
-    /* Adjust .recipie1 */
-    .recipie1 {
+    /* Adjust .recipe */
+    .recipe {
         flex-direction: row; /* Keep the image on the left and content on the right */
         align-items: flex-start; /* Align content to the top */
         max-width: 800px; /* Expand the container width for larger screens */
         margin: 20px auto;
     }
     
-    .recipie1 img {
+    .recipe img {
         width: 50%; /* Image takes half the container */
     }
     
@@ -195,7 +195,7 @@ img {
   
   /* Media query for small screens */
   @media (max-width: 768px) {
-    .recipie1 .description {
+    .recipe .description {
       display: none; /* Hide the description on small screens */
     }
   }
