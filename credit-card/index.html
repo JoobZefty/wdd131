@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link rel="stylesheet" href="card.css" />
     <script src="card.js" defer></script>
 </head>
+
 <body>
-    <form action="/submit" method="post">
+    <div class="errorMsg" style="color: red; font-size: 14px;"></div>
+
+    <form id="credit-card" action="/submit" method="post">
         <div class="card-info">
-            <label for="number">Number:</label>
-            <input type="number" id="number" name="number" required><br><br>
+            <label for="cardNumber">Number:</label>
+            <input type="number" id="cardNumber" name="number" required><br><br>
 
             <label for="name">Card Holder:</label>
             <input type="text" id="name" name="name" required><br><br>
@@ -23,13 +27,13 @@
         <div class="cvv-info">
             <div class="swipe"></div>
             <div class="input-spot">
-            <label for="cvv">CVC / CVV:</label>
-            <input type="cvv" id="cvv" name="cvv" required><br><br>
+                <label for="cvv">CVC / CVV:</label>
+                <input type="cvv" id="cvv" name="cvv" required><br><br>
             </div>
-            
         </div>
 
         <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>

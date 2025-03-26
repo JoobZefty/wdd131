@@ -1,4 +1,4 @@
-/* card.css */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -52,4 +52,16 @@ input[type="submit"] {
     cursor: pointer;
     margin-top: 40px;
     grid-area: 4 / 3 / 5 / 4
+}
+
+.errorMsg {
+    color: red;
+    /* this is some angry lookin' red */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
 }

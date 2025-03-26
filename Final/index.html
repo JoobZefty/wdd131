@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Memory</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="logo image for Color Memory">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="triple-mode.html">Triple Mode</a>
+            <a href="rules.html">Rules</a>
+        </nav>
+    </header>
+    <main>
+        <button id="new-game">Start New Game</button>
+        <div id="health-label">Health:</div>
+        <p id="health-value"></p>
+        <div id="score-label">Score:</div>
+        <p id="score-value"></p>
+        <!-- js flexbox to the play area -->
+        <div id="play-area">
+            <div id="card1" value="255000000"></div>
+            <div id="card2" value="255000000"></div>
+            <div id="card3" value="000255000"></div>
+            <div id="card4" value="000255000"></div>
+            <div id="card5" value="000000255"></div>
+            <div id="card6" value="000000255"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="credit1">Kaden Layland Wdd131 2025</div>
+    </footer>
+</body>
+</html>

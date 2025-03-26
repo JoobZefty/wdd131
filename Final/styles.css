@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #45062E;
+    --secondary-color: #7F055F;
+    --accent1-color: #E5A4CB;
+    --accent2-color: #EBD2BE;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: 'Fredericka the Great', Helvetica, sans-serif;
+}
+
+header {
+    display:grid;
+    grid-template-columns:1fr 9fr;
+    background-color:var(--primary-color);
+    width:100%;
+}
+header img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width:100px;
+    border:var(--accent2-color), solid 6px;
+}
+nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+nav a{
+    padding:20px;
+    font-family:var(--heading-font);
+    color:var(--accent1-color);
+    background-color:var(--secondary-color);
+    margin:20px;
+    border-radius: 5%;
+    margin-top:20px;
+}
