@@ -118,7 +118,7 @@ body{
     background: linear-gradient(to bottom, var(--accent2-color), #ffffff); /* Gradient from top */
     background-repeat: no-repeat; /* Prevents the gradient from repeating */
     background-size: cover; /* Makes the gradient cover the entire body */
-
+    width:100%
 }
 
 main{
