@@ -156,6 +156,21 @@ footer{
     font-family: var(--paragraph-font);
 }
 
+.rules h1{
+    color:var(--primary-color);
+    font-family:var(--heading-font);
+    margin: 0;
+    padding:20px;
+    font-size:30px;
+}
+.rules p{
+    color:var(--secondary-color);
+    font-family:var(--paragraph-font);
+    margin: 0;
+    padding:20px;
+    font-size:15px;
+}
+
 @media (max-width: 550px) {
     header {
         display:grid;
@@ -198,6 +213,14 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         width:100%
+    }
+    .rules h1{
+        padding:10px;
+        font-size:15px;
+    }
+    .rules p{
+        padding:10px;
+        font-size:10px;
     }
 }
 
