@@ -6,7 +6,7 @@
     --primary-color: #45062E;
     --secondary-color: #7F055F;
     --accent1-color: #E5A4CB;
-    --accent2-color: #EBD2BE;
+    --accent2-color: #efd4e3;
   
     /* change the values below to your chosen font(s) */
     --heading-font: "IM Fell French Canon SC";
@@ -18,6 +18,7 @@ header {
     grid-template-columns:1fr 9fr;
     background-color:var(--primary-color);
     width:100%;
+    padding:30px;
 }
 header img{
     grid-column-start: 1;
@@ -28,13 +29,123 @@ header img{
 nav {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:200px 200px 200px 1fr;
 }
 nav a{
     padding:20px;
     font-family:var(--heading-font);
     color:var(--accent1-color);
+    text-decoration: none;
+    font-weight:bold;
     background-color:var(--secondary-color);
     margin:20px;
     border-radius: 5%;
-    margin-top:20px;
 }
+#title{
+    font-family:var(--paragraph-font);
+    color:var(--accent1-color);
+    text-decoration: none;
+    font-size:40px;
+    margin:20px;
+}
+
+nav a:hover{
+    color:var(--primary-color);
+    background-color:var(--accent1-color);
+}
+
+#info-section{
+    margin:50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-weight:bold;
+    gap:5px
+}
+
+#new-game{
+    grid-column-start: 1;
+    color:var(--secondary-color);
+    font-family:var(--paragraph-font);
+    width:75%;
+    margin:0 auto;
+    font-weight:bold;
+    font-size:20px;
+    background-color: var(--accent2-color);
+    border:var(--secondary-color) solid 4px;
+    border-radius: 5%;
+}
+#new-game a{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+
+#health-label{
+    grid-column-start: 2;
+    color:var(--accent1-color);
+    font-family:var(--paragraph-font);
+    text-align: right;
+    font-size:20px;
+}
+#health-value{
+    grid-column-start: 3;
+    color:var(--accent1-color);
+    font-family:var(--paragraph-font);
+    text-align: left;
+    font-size:20px;
+}
+
+#score-label{
+    grid-column-start: 4;
+    color:var(--accent1-color);
+    font-family:var(--paragraph-font);
+    text-align: right;
+    font-size:20px;
+}
+#score-value{
+    grid-column-start: 5;
+    color:var(--accent1-color);
+    font-family:var(--paragraph-font);
+    text-align: left;
+    font-size:20px;
+}
+
+main{
+    width: 100%;
+}
+
+#play-area{
+    display:flex;
+    flex-wrap: wrap;
+    border:5px solid black;
+    border-radius: 1%;
+    max-width:80%;
+    min-height:400px;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+
+.card{
+    width:80px;
+    height:100px;
+    border:var(--primary-color) 3px solid;
+    margin:20px;
+}
+
+footer{
+    background-color:var(--primary-color);
+    width:100%;
+    padding:30px;
+}
+
+#credit1{
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+}
+
+
+
+
+
+

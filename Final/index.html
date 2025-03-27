@@ -9,27 +9,31 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="logo image for Color Memory">
+        <img src="images/logo.jpg" alt="Logo image for Color Memory">
         <nav>
             <a href="index.html">Home</a>
             <a href="triple-mode.html">Triple Mode</a>
             <a href="rules.html">Rules</a>
+            <h1 id="title">Color Memory</h1>
         </nav>
     </header>
     <main>
-        <button id="new-game">Start New Game</button>
-        <div id="health-label">Health:</div>
-        <p id="health-value"></p>
-        <div id="score-label">Score:</div>
-        <p id="score-value"></p>
+        <div id="info-section"> 
+            <button id="new-game"><a href="index.html">Start New Game</a></button>
+            <p id="health-label">Health:</p>
+            <p id="health-value"></p>
+            <p id="score-label">Score:</p>
+            <p id="score-value"></p>
+        </div>
+       
         <!-- js flexbox to the play area -->
         <div id="play-area">
-            <div id="card1" value="255000000"></div>
-            <div id="card2" value="255000000"></div>
-            <div id="card3" value="000255000"></div>
-            <div id="card4" value="000255000"></div>
-            <div id="card5" value="000000255"></div>
-            <div id="card6" value="000000255"></div>
+            <!-- <div class="card" value="255000000"></div>
+            <div class="card" value="255000000"></div>
+            <div class="card" value="000255000"></div>
+            <div class="card" value="000255000"></div>
+            <div class="card" value="000000255"></div>
+            <div class="card" value="000000255"></div> -->
         </div>
     </main>
     <footer>

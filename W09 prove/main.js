@@ -350,7 +350,7 @@ function renderRecipes(recipeList){
 
 function init(){
     const recipe = getRandomRecipe(recipes);
-    const recipeContainer = document.querySelector('#recipes');
+    const containerArea = document.querySelector('#recipes');
     recipeContainer.innerHTML = '';
     renderRecipes(recipe);
 }
