@@ -13,25 +13,26 @@
     --paragraph-font: 'Fredericka the Great', Helvetica, sans-serif;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 header {
-    display:grid;
-    grid-template-columns:1fr 9fr;
+    display:flex;
+    flex-wrap: wrap;
     background-color:var(--primary-color);
     width:100%;
     padding:30px;
 }
 header img{
-    grid-column-start: 1;
-    grid-column-end: 2;
     width:100px;
+    margin:auto auto;
     border:var(--accent2-color), solid 6px;
 }
 nav {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-top:45px;
-    display:grid;
-    grid-template-columns:200px 200px 200px 1fr;
+    /* margin-top:45px; */
+    margin:auto auto;
 }
 nav a{
     padding:20px;
@@ -48,7 +49,7 @@ nav a{
     color:var(--accent1-color);
     text-decoration: none;
     font-size:40px;
-    margin:20px;
+    margin:auto auto;
 }
 
 nav a:hover{
@@ -59,7 +60,7 @@ nav a:hover{
 #info-section{
     margin:50px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 1fr 2fr 1fr;
     font-weight:bold;
     gap:5px
 }
@@ -111,6 +112,15 @@ nav a:hover{
     font-size:20px;
 }
 
+body{
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure the body spans the viewport height */
+    background: linear-gradient(to bottom, var(--accent2-color), #ffffff); /* Gradient from top */
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-size: cover; /* Makes the gradient cover the entire body */
+
+}
+
 main{
     width: 100%;
 }
@@ -118,6 +128,8 @@ main{
 #play-area{
     display:flex;
     flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgb(255, 255, 255);
     border:5px solid black;
     border-radius: 1%;
     max-width:80%;
@@ -144,6 +156,42 @@ footer{
     font-family: var(--paragraph-font);
 }
 
+@media (max-width: 550px) {
+    header {
+        display:grid;
+        grid-template-rows:100px 180px 50px;
+        grid-template-columns: 1fr;
+    }
+    nav {
+        display: grid;
+        grid-template-rows:40px 40px 40px;
+        margin:auto auto;
+    }
+    nav a{
+        padding:5px;
+        margin:5px;
+    }
+    #new-game{
+        font-size:10px;
+    }
+    #new-game a{
+        font-size:15px;
+    }
+    .card{
+        width:56px;
+        height:70px;
+        margin:10px;
+    }
+    #play-area{
+        display:flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        max-width:90%;
+        min-height:400px;
+        margin:0 auto;
+        margin-bottom: 50px;
+    }
+}
 
 
 
