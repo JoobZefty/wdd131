@@ -113,11 +113,11 @@ nav a:hover{
 }
 
 body{
-    margin: 0; /* Remove default margin */
-    height: 100vh; /* Ensure the body spans the viewport height */
-    background: linear-gradient(to bottom, var(--accent2-color), #ffffff); /* Gradient from top */
-    background-repeat: no-repeat; /* Prevents the gradient from repeating */
-    background-size: cover; /* Makes the gradient cover the entire body */
+    margin: 0; 
+    height: 100vh; 
+    background: linear-gradient(to bottom, var(--accent2-color), #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
     width:100%
 }
 
@@ -190,6 +190,14 @@ footer{
         min-height:400px;
         margin:0 auto;
         margin-bottom: 50px;
+    }
+    body{
+        margin: 0; 
+        height: 100vh; 
+        background:#ffffff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%
     }
 }
 
