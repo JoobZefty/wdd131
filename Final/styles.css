@@ -170,6 +170,13 @@ footer{
     padding:20px;
     font-size:15px;
 }
+#triple{
+    color:var(--primary-color);
+    font-family:var(--heading-font);
+    margin: 0 auto;
+    padding:40px;
+    font-size:30px;
+}
 
 @media (max-width: 550px) {
     header {
@@ -221,6 +228,10 @@ footer{
     .rules p{
         padding:10px;
         font-size:10px;
+    }
+    #triple{
+        padding:10px;
+        font-size:15px;
     }
 }
 
